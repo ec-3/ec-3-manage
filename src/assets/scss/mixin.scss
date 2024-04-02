@@ -1,0 +1,138 @@
+@mixin to-wrap() {
+    word-break: break-word;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+@mixin text-ellipsis() {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+@mixin mul-ellipsis($line: 2) {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $line;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+@mixin clearfix() {
+    &:before, &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+@mixin border-bottom-1px($color: #ccc, $width: 1PX, $radius: 2PX, $style: solid) {
+    position: relative;
+    &:after {
+        content: "";
+        pointer-events: none;
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transform-origin: 0 bottom;
+        border-bottom: $width $style $color;
+        border-radius: $radius;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        @media (min-resolution: 2dppx) {
+            width: 200%;
+            height: 200%;
+            border-radius: $radius * 2;
+            transform: scale(.5);
+        }
+        @media (min-resolution: 3dppx) {
+            width: 300%;
+            height: 300%;
+            border-radius: $radius * 3;
+            transform: scale(.333);
+        }
+    }
+}
+@mixin border-right-1px($color: #ccc, $width: 1PX, $radius: 2PX, $style: solid) {
+    position: relative;
+    &:after {
+        content: "";
+        pointer-events: none;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform-origin: right 0;
+        border-right: $width $style $color;
+        border-radius: $radius;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        @media (min-resolution: 2dppx) {
+            width: 200%;
+            height: 200%;
+            border-radius: $radius * 2;
+            transform: scale(.5);
+        }
+        @media (min-resolution: 3dppx) {
+            width: 300%;
+            height: 300%;
+            border-radius: $radius * 3;
+            transform: scale(.333);
+        }
+    }
+}
+// 背景渐变
+@mixin bg-linear-gradient($default-bg: $theme-color, $color-top: $theme-color, $color-bottom: $theme-color-deep) {
+    background-color: $default-bg;
+    background: linear-gradient($color-top, $color-bottom);
+
+}
+
+// 背景图片
+@mixin bg-image($url) {
+    background-image: url($url + "@2x.png");
+    @media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+        background-image: url($url + "@3x.png");
+    }
+}
+
+// 禁止折行
+@mixin no-wrap() {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+// 扩展小图标按钮的点击区域
+@mixin extend-click() {
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        right: -10px;
+        bottom: -10px;
+    }
+}
+
+@mixin box-shadow($type: 1, $direct: bottom) {
+    @if ($direct == bottom) {
+        @if $type == 1 {
+            // 物体位于低层级，此时物体被操作(悬停、点击等)触发为悬浮状态，当操作完成或取消时，悬停状态反馈也跟随消失，物体回归到原有的层级中，如：卡片 hover 等；
+            box-shadow: 0 1PX 2PX -2PX rgba(0, 0, 0, .16), 0 3PX 6PX 0 rgba(0, 0, 0, .12), 0 5PX 12PX 4PX rgba(0, 0, 0, .09);
+        } @else if $type == 2 {
+            // 物体位于中层级，此时物体与基准面的关系是展开并跟随，物体由地面上的元素展开产生，会跟随元素所在层级的移动而移动，如：下拉面板等；
+            box-shadow: 0 3PX 6PX -4PX rgba(0, 0, 0, .12), 0 6PX 16PX 0 rgba(0, 0, 0, .08), 0 9PX 28PX 8PX rgba(0, 0, 0, .05);
+        } @else if $type == 3 {
+            // 物体位于高层级，该物体的运动和其他层级没有关联，如：对话框等。
+            box-shadow: 0 6PX 16PX -8PX rgba(0, 0, 0, .08), 0 9PX 28PX 0 rgba(0, 0, 0, .05), 0 12PX 48PX 16PX rgba(0, 0, 0, .03);
+        }
+    }
+}

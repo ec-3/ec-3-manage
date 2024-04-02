@@ -1,0 +1,21 @@
+html, body {
+    height: 100%;
+    line-height: 1;
+    font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, SimSun, sans-serif;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    color: $color-text-regular;
+    background-color: #fff;
+    display: flex;
+    //overflow-x: hidden;
+}
+
+/** 隐藏IE浏览器自带的文本删除按钮和密码查看按钮 **/
+input::-ms-clear, input::-ms-reveal {
+    display: none;
+}
+
+input::-webkit-input-placeholder { color: $color-text-placeholder; }
+input::-moz-placeholder { color: $color-text-placeholder; }
+input:-moz-placeholder { color: $color-text-placeholder; }
+input:-ms-input-placeholder { color: $color-text-placeholder; }

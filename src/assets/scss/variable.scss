@@ -1,0 +1,102 @@
+// 文字颜色
+$color-text-primary: #1a1a1a;         // *着重显示
+$color-text-regular: #313131;         // *常规色
+$color-text-secondary: #606266;       // *次要色
+$color-text-placeholder: #c0c4cc;
+
+// 背景颜色
+$background-grey-deep: #c3c3c3;
+$background-grey: #d8d8d8;
+$background-grey-light: #e0e0e0;
+$background-grey-page: #efeff4;
+
+// 字体大小
+$size-tn: 12px;
+$size-tner: 13px;
+$size-md: 14px;
+$size-mder: 15px;
+$size-lg: 16px;
+$size-lger: 17px;
+$size-hg: 18px;
+
+// 行高
+$line-height: 1.42857143;
+
+// 内边距
+$side-padding: 12px;
+
+/** 警告颜色定义 **/
+$warging-color: #8a6d3b;
+$warging-bg: #fcf8e3;
+/** Dust Red / 薄暮 **/
+$theme-dust_red: #f5222d;
+$theme-dust_red-light: #ff4d4f;
+$theme-dust_red-lighter: #ff7875;
+$theme-dust_red-deep: #cf1322;
+$theme-dust_red-relative: #22f558;
+/** Volcano / 火山 **/
+$theme-volcano: #fa541c;
+$theme-volcano-light: #ff7a45;
+$theme-volcano-lighter: #ff9c6e;
+$theme-volcano-deep: #d4380d;
+$theme-volcano-relative: #1bfac6;
+/** Sunset Orange / 日暮 **/
+$theme-sunset_orange: #fa8c16;
+$theme-sunset_orange-light: #ffa940;
+$theme-sunset_orange-lighter: #ffc069;
+$theme-sunset_orange-deep: #d46b08;
+$theme-sunset_orange-relative: #16bdfa;
+/** Calendula Gold / 金盏花 **/
+$theme-calendula_gold: #faad14;
+$theme-calendula_gold-light: #ffc53d;
+$theme-calendula_gold-lighter: #ffd666;
+$theme-calendula_gold-deep: #d48806;
+$theme-calendula_gold-relative: #146ffa;
+/** Sunrise Yellow / 日出 **/
+$theme-sunrise_yellow: #fadb14;
+$theme-sunrise_yellow-light: #ffec3d;
+$theme-sunrise_yellow-lighter: #fff566;
+$theme-sunrise_yellow-deep: #d4b106;
+$theme-sunrise_yellow-relative: #3214fa;
+/** Lime / 青柠 **/
+$theme-lime: #a0d911;
+$theme-lime-light: #bae637;
+$theme-lime-lighter: #d3f261;
+$theme-lime-deep: #7cb305;
+$theme-lime-relative: #9f11d9;
+/** Polar Green / 极光绿 **/
+$theme-polar_green: #52c41a;
+$theme-polar_green-light: #73d13d;
+$theme-polar_green-lighter: #95de64;
+$theme-polar_green-deep: #389e0d;
+$theme-polar_green-relative: #c41ac1;
+/** cyan / 明青 **/
+$theme-cyan: #13c2c2;
+$theme-cyan-light: #36cfc9;
+$theme-cyan-lighter: #5cdbd3;
+$theme-cyan-deep: #08979c;
+$theme-cyan-relative: #c25413;
+/** Daybreak Blue / 拂晓蓝 **/
+$theme-daybreak_blue: #1890ff;
+$theme-daybreak_blue-light: #40a9ff;
+$theme-daybreak_blue-lighter: #69c0ff;
+$theme-daybreak_blue-deep: #096dd9;
+$theme-daybreak_blue-relative: #ffa717;
+/** Geek Blue / 极客蓝 **/
+$theme-geek_blue: #2f54eb;
+$theme-geek_blue-light: #597ef7;
+$theme-geek_blue-lighter: #85a5ff;
+$theme-geek_blue-deep: #1d39c4;
+$theme-geek_blue-relative: #ebba2f;
+/** Golden Purple / 酱紫 **/
+$theme-golden_purple: #722ed1;
+$theme-golden_purple-light: #9254de;
+$theme-golden_purple-lighter: #b37feb;
+$theme-golden_purple-deep: #531dab;
+$theme-golden_purple-relative: #d1cd2e;
+/** Magenta / 法式洋红 **/
+$theme-magenta: #eb2f96;
+$theme-magenta-light: #f759ab;
+$theme-magenta-lighter: #ff85c0;
+$theme-magenta-deep: #c41d7f;
+$theme-magenta-relative: #35EB2F;
