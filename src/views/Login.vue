@@ -1,11 +1,10 @@
 <template>
     <main>
-        <TheWelcome />
+        登录页面
     </main>
 </template>
 
 <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
 </script>
 
 
