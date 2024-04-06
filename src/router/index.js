@@ -1,6 +1,6 @@
 import {createRouter, createWebHistory} from 'vue-router';
 import Login from '@/views/Login.vue';
-import HomeLayout from '@/layout/HomeLayout.vue';
+import HomeLayout from '@/layout/HomeLayout/Index.vue';
 
 
 const router = createRouter({
@@ -17,7 +17,13 @@ const router = createRouter({
                     name: 'products',
                     component: () => import(/* webpackChunkName: "products" */ '@/views/Products.vue'),
                     meta: {requiresAuth: false}
-                }
+                },
+                {
+                    path: 'orders',
+                    name: 'orders',
+                    component: () => import(/* webpackChunkName: "orders" */ '@/views/Orders.vue'),
+                    meta: {requiresAuth: false}
+                },
             ]
         },
         /**

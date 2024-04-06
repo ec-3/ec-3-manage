@@ -6,7 +6,7 @@ html, body {
     -webkit-tap-highlight-color: transparent;
     color: $color-text-regular;
     background-color: #fff;
-    //overflow-x: hidden;
+    overflow: hidden;
 }
 
 /** 隐藏IE浏览器自带的文本删除按钮和密码查看按钮 **/

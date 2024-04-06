@@ -1,5 +1,5 @@
 <template>
-    product
+    orders
 </template>
 
 <script>
