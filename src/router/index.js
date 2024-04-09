@@ -7,7 +7,7 @@ const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
     routes: [
         {
-            path: '/',
+            path: '/home',
             name: 'home',
             component: HomeLayout,
             redirect: '/products',
@@ -38,7 +38,7 @@ const router = createRouter({
          **/
         /** 登录 **/
         {
-            path: '/login',
+            path: '/',
             name: 'login',
             component: Login,
             meta: {requiresAuth: false}
