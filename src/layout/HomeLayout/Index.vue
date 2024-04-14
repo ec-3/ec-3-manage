@@ -11,11 +11,12 @@
         </div>
     </aside>
     <main class="main">
-        <router-view v-slot="{ Component }">
-            <keep-alive>
-                <component :is="Component" />
-            </keep-alive>
-        </router-view>
+<!--        <router-view v-slot="{ Component }">-->
+<!--            <keep-alive>-->
+<!--                <component :is="Component" />-->
+<!--            </keep-alive>-->
+<!--        </router-view>-->
+        <router-view></router-view>
     </main>
 </template>
 
@@ -77,6 +78,7 @@ import Menu from './Menu.vue';
         left: $aside-width;
         right: 0;
         bottom: 0;
+        padding: $side-padding;
         background-color: $background-grey-page;
         overflow-y: auto;
     }

@@ -18,3 +18,37 @@ input::-webkit-input-placeholder { color: $color-text-placeholder; }
 input::-moz-placeholder { color: $color-text-placeholder; }
 input:-moz-placeholder { color: $color-text-placeholder; }
 input:-ms-input-placeholder { color: $color-text-placeholder; }
+
+
+.el-table {
+    .el-table__body-header {
+        .el-table__cell {
+            padding: 12px 0 !important;
+            border-bottom: 1px solid $color-text-primary !important;
+            .cell {
+                text-align: center;
+                font-size: 14px;
+                color: $color-text-primary;
+                font-weight: 700;
+            }
+        }
+    }
+    tbody .cell {
+        color: $color-text-regular;
+        user-select: text;
+    }
+    .el-loading-mask {
+        background-color: rgba(7, 17, 27, 0) !important;
+    }
+
+}
+
+/** 进度条颜色 **/
+#nprogress .bar {
+    background: $theme-sunset_orange; //自定义颜色
+    height: 1px;
+    .peg {
+        box-shadow: 0 0 10PX transparent, 0 0 5PX transparent;
+    }
+}
+

@@ -40,6 +40,13 @@ export default ({mode}) => {
             port: 3000,
             open: false,
             https: false,
+            proxy: {
+                // '/aaa': {
+                //     target: 'https://cube-management.azurewebsites.net', // 目标服务器地址
+                //     changeOrigin: true, // 是否改变源地址
+                //     rewrite: (path) => path.replace(/^\/aaa/, "")
+                // },
+            }
         },
         css: {
             preprocessorOptions: {
