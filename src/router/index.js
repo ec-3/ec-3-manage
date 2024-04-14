@@ -8,7 +8,7 @@ import 'nprogress/nprogress.css'
 NProgress.configure({showSpinner: false, speed: 1000})
 
 const router = createRouter({
-    history: createWebHistory(process.env.BASE_URL),
+    history: createWebHistory(),
     routes: [
         {
             path: '/',
@@ -66,7 +66,6 @@ router.beforeEach((to, from, next) => {
 })
 
 router.afterEach(() => {
-    console.log(1111111111)
     NProgress.done() // finish progress bar
 })
 
