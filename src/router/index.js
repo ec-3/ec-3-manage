@@ -8,7 +8,7 @@ import 'nprogress/nprogress.css'
 NProgress.configure({showSpinner: false, speed: 1000})
 
 const router = createRouter({
-    history: createWebHistory(),
+    history: createWebHistory(process.env.BASE_URL),
     routes: [
         {
             path: '/',
